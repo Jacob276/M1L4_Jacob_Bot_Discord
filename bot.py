@@ -18,6 +18,8 @@ async def on_message(message):
         return
     if message.content.startswith('$halo'):
         await message.channel.send("Hi!")
+    elif message.content.startswith("$help"):
+        await message.channel.send("This bot is made to generate passwords,flip coins, and generate random emoji's!, use "$halo" to say hi, "$bye" to generate random emoji, and "$pass" to flip a coin.")
     elif message.content.startswith('$bye'):
         await message.channel.send("\\U0001f642")
     elif message.content.starswith("$pass"):

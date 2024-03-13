@@ -10,7 +10,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'Kita telah masuk sebagai {client.user}')
+    print('Kita telah masuk sebagai {client.user}')
 
 @client.event
 async def on_message(message):
